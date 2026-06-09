@@ -256,7 +256,7 @@ test('select.matches()', async function (t) {
     await t.test(
       'should yield `true` if attribute matches (number)',
       async function () {
-        assert.ok(matches('[foo=1]', u('a', {foo: 1})))
+        assert.ok(matches('[foo="1"]', u('a', {foo: 1})))
       }
     )
 
@@ -314,7 +314,7 @@ test('select.matches()', async function (t) {
     await t.test(
       'should yield `false` if not matches (number)',
       async function () {
-        assert.ok(!matches('[foo=1]', u('a', {foo: 2})))
+        assert.ok(!matches('[foo="1"]', u('a', {foo: 2})))
       }
     )
 
@@ -367,7 +367,7 @@ test('select.matches()', async function (t) {
     await t.test(
       'should yield `false` if not string (number)',
       async function () {
-        assert.ok(!matches('[foo^=1]', u('a', {foo: 1})))
+        assert.ok(!matches('[foo^="1"]', u('a', {foo: 1})))
       }
     )
 
@@ -411,7 +411,7 @@ test('select.matches()', async function (t) {
     await t.test(
       'should yield `false` if not string (number)',
       async function () {
-        assert.ok(!matches('[foo$=1]', u('a', {foo: 1})))
+        assert.ok(!matches('[foo$="1"]', u('a', {foo: 1})))
       }
     )
 
@@ -455,7 +455,7 @@ test('select.matches()', async function (t) {
     await t.test(
       'should yield `false` if not string (number)',
       async function () {
-        assert.ok(!matches('[foo*=1]', u('a', {foo: 1})))
+        assert.ok(!matches('[foo*="1"]', u('a', {foo: 1})))
       }
     )
 
@@ -494,7 +494,7 @@ test('select.matches()', async function (t) {
       await t.test(
         'should yield `true` if attribute matches (number)',
         async function () {
-          assert.ok(matches('[foo~=1]', u('a', {foo: 1})))
+          assert.ok(matches('[foo~="1"]', u('a', {foo: 1})))
         }
       )
 
@@ -552,7 +552,7 @@ test('select.matches()', async function (t) {
       await t.test(
         'should yield `false` if not matches (number)',
         async function () {
-          assert.ok(!matches('[foo~=1]', u('a', {foo: 2})))
+          assert.ok(!matches('[foo~="1"]', u('a', {foo: 2})))
         }
       )
 
