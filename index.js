@@ -1,7 +1,6 @@
 /**
- * @typedef {import('unist').Position} Position
- * @typedef {import('unist').Node} Node
- * @typedef {import('./lib/types.js').SelectState} SelectState
+ * @import {Node, Position} from 'unist'
+ * @import {SelectState} from './lib/types.js'
  */
 
 /**
