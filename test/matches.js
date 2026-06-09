@@ -1,7 +1,3 @@
-/**
- * @typedef {import('unist').Literal} Literal
- */
-
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {u} from 'unist-builder'
