@@ -54,15 +54,20 @@
     "zwitch": "^2.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
-    "c8": "^8.0.0",
+    "@types/node": "^25.0.0",
+    "c8": "^11.0.0",
     "prettier": "^3.0.0",
-    "remark-cli": "^11.0.0",
-    "remark-preset-wooorm": "^9.0.0",
+    "remark-cli": "^12.0.0",
+    "remark-preset-wooorm": "^11.0.0",
     "type-coverage": "^2.0.0",
-    "typescript": "^5.0.0",
+    "typescript": "^6.0.0",
     "unist-builder": "^4.0.0",
-    "xo": "^0.56.0"
+    "xo": "^2.0.0"
+  },
+  "overrides": {
+    "c8": {
+      "yargs": "^18.0.0"
+    }
   },
   "scripts": {
     "prepack": "npm run build && npm run format",
@@ -90,23 +95,5 @@
     "detail": true,
     "ignoreCatch": true,
     "strict": true
-  },
-  "xo": {
-    "overrides": [
-      {
-        "files": [
-          "test/**/*.js"
-        ],
-        "rules": {
-          "import/no-unassigned-import": "off",
-          "max-nested-callbacks": "off",
-          "no-await-in-loop": "off"
-        }
-      }
-    ],
-    "rules": {
-      "max-params": "off"
-    },
-    "prettier": true
   }
 }

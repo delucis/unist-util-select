@@ -13,20 +13,20 @@ and `matches`.
 
 ## Contents
 
-*   [What is this?](#what-is-this)
-*   [When should I use this?](#when-should-i-use-this)
-*   [Install](#install)
-*   [Use](#use)
-*   [API](#api)
-    *   [`matches(selector, node)`](#matchesselector-node)
-    *   [`select(selector, tree)`](#selectselector-tree)
-    *   [`selectAll(selector, tree)`](#selectallselector-tree)
-*   [Support](#support)
-*   [Types](#types)
-*   [Compatibility](#compatibility)
-*   [Related](#related)
-*   [Contribute](#contribute)
-*   [License](#license)
+* [What is this?](#what-is-this)
+* [When should I use this?](#when-should-i-use-this)
+* [Install](#install)
+* [Use](#use)
+* [API](#api)
+  * [`matches(selector, node)`](#matchesselector-node)
+  * [`select(selector, tree)`](#selectselector-tree)
+  * [`selectAll(selector, tree)`](#selectallselector-tree)
+* [Support](#support)
+* [Types](#types)
+* [Compatibility](#compatibility)
+* [Related](#related)
+* [Contribute](#contribute)
+* [License](#license)
 
 ## What is this?
 
@@ -116,10 +116,10 @@ This only checks that the given node matches the selector.
 
 ###### Parameters
 
-*   `selector` (`string`)
-    — CSS selector, such as (`heading`, `link, linkReference`).
-*   `node` ([`Node`][node], optional)
-    — node that might match `selector`
+* `selector` (`string`)
+  — CSS selector, such as (`heading`, `link, linkReference`).
+* `node` ([`Node`][node], optional)
+  — node that might match `selector`
 
 ###### Returns
 
@@ -143,10 +143,10 @@ Searches the tree in *[preorder][]*.
 
 ###### Parameters
 
-*   `selector` (`string`)
-    — CSS selector, such as (`heading`, `link, linkReference`).
-*   `tree` ([`Node`][node], optional)
-    — tree to search
+* `selector` (`string`)
+  — CSS selector, such as (`heading`, `link, linkReference`).
+* `tree` ([`Node`][node], optional)
+  — tree to search
 
 ###### Returns
 
@@ -188,10 +188,10 @@ Searches the tree in *[preorder][]*.
 
 ###### Parameters
 
-*   `selector` (`string`)
-    — CSS selector, such as (`heading`, `link, linkReference`).
-*   `tree` ([`Node`][node], optional)
-    — tree to search
+* `selector` (`string`)
+  — CSS selector, such as (`heading`, `link, linkReference`).
+* `tree` ([`Node`][node], optional)
+  — tree to search
 
 ###### Returns
 
@@ -232,45 +232,45 @@ Yields:
 
 ## Support
 
-*   [x] `*` (universal selector)
-*   [x] `,` (multiple selector)
-*   [x] `paragraph` (type selector)
-*   [x] `blockquote paragraph` (combinator: descendant selector)
-*   [x] `blockquote > paragraph` (combinator: child selector)
-*   [x] `code + paragraph` (combinator: adjacent sibling selector)
-*   [x] `code ~ paragraph` (combinator: general sibling selector)
-*   [x] `[attr]` (attribute existence, checks that the value on the tree is not
-    nullish)
-*   [x] `[attr=value]` (attribute equality, this stringifies values on the tree)
-*   [x] `[attr^=value]` (attribute begins with, only works on strings)
-*   [x] `[attr$=value]` (attribute ends with, only works on strings)
-*   [x] `[attr*=value]` (attribute contains, only works on strings)
-*   [x] `[attr~=value]` (attribute contains, checks if `value` is in the array,
-    if there’s an array on the tree, otherwise same as attribute equality)
-*   [x] `:is()` (functional pseudo-class)
-*   [x] `:has()` (functional pseudo-class; also supports `a:has(> b)`)
-*   [x] `:not()` (functional pseudo-class)
-*   [x] `:blank` (pseudo-class, blank and empty are the same: a parent without
-    children, or a node without value)
-*   [x] `:empty` (pseudo-class, blank and empty are the same: a parent without
-    children, or a node without value)
-*   [x] `:root` (pseudo-class, matches the given node)
-*   [x] `:scope` (pseudo-class, matches the given node)
-*   [x] \* `:first-child` (pseudo-class)
-*   [x] \* `:first-of-type` (pseudo-class)
-*   [x] \* `:last-child` (pseudo-class)
-*   [x] \* `:last-of-type` (pseudo-class)
-*   [x] \* `:only-child` (pseudo-class)
-*   [x] \* `:only-of-type` (pseudo-class)
-*   [x] \* `:nth-child()` (functional pseudo-class)
-*   [x] \* `:nth-last-child()` (functional pseudo-class)
-*   [x] \* `:nth-last-of-type()` (functional pseudo-class)
-*   [x] \* `:nth-of-type()` (functional pseudo-class)
+* [x] `*` (universal selector)
+* [x] `,` (multiple selector)
+* [x] `paragraph` (type selector)
+* [x] `blockquote paragraph` (combinator: descendant selector)
+* [x] `blockquote > paragraph` (combinator: child selector)
+* [x] `code + paragraph` (combinator: adjacent sibling selector)
+* [x] `code ~ paragraph` (combinator: general sibling selector)
+* [x] `[attr]` (attribute existence, checks that the value on the tree is not
+  nullish)
+* [x] `[attr=value]` (attribute equality, this stringifies values on the tree)
+* [x] `[attr^=value]` (attribute begins with, only works on strings)
+* [x] `[attr$=value]` (attribute ends with, only works on strings)
+* [x] `[attr*=value]` (attribute contains, only works on strings)
+* [x] `[attr~=value]` (attribute contains, checks if `value` is in the array,
+  if there’s an array on the tree, otherwise same as attribute equality)
+* [x] `:is()` (functional pseudo-class)
+* [x] `:has()` (functional pseudo-class; also supports `a:has(> b)`)
+* [x] `:not()` (functional pseudo-class)
+* [x] `:blank` (pseudo-class, blank and empty are the same: a parent without
+  children, or a node without value)
+* [x] `:empty` (pseudo-class, blank and empty are the same: a parent without
+  children, or a node without value)
+* [x] `:root` (pseudo-class, matches the given node)
+* [x] `:scope` (pseudo-class, matches the given node)
+* [x] \* `:first-child` (pseudo-class)
+* [x] \* `:first-of-type` (pseudo-class)
+* [x] \* `:last-child` (pseudo-class)
+* [x] \* `:last-of-type` (pseudo-class)
+* [x] \* `:only-child` (pseudo-class)
+* [x] \* `:only-of-type` (pseudo-class)
+* [x] \* `:nth-child()` (functional pseudo-class)
+* [x] \* `:nth-last-child()` (functional pseudo-class)
+* [x] \* `:nth-last-of-type()` (functional pseudo-class)
+* [x] \* `:nth-of-type()` (functional pseudo-class)
 
 ###### Notes
 
-*   \* — not supported in `matches`
-*   `:any()` and `:matches()` are renamed to `:is()` in CSS
+* \* — not supported in `matches`
+* `:any()` and `:matches()` are renamed to `:is()` in CSS
 
 ## Types
 
@@ -289,14 +289,14 @@ compatible with Node.js 16.
 
 ## Related
 
-*   [`unist-util-is`](https://github.com/syntax-tree/unist-util-is)
-    — check if a node passes a test
-*   [`unist-util-visit`](https://github.com/syntax-tree/unist-util-visit)
-    — recursively walk over nodes
-*   [`unist-util-visit-parents`](https://github.com/syntax-tree/unist-util-visit-parents)
-    — like `visit`, but with a stack of parents
-*   [`unist-builder`](https://github.com/syntax-tree/unist-builder)
-    — create unist trees
+* [`unist-util-is`](https://github.com/syntax-tree/unist-util-is)
+  — check if a node passes a test
+* [`unist-util-visit`][unist-util-visit]
+  — recursively walk over nodes
+* [`unist-util-visit-parents`](https://github.com/syntax-tree/unist-util-visit-parents)
+  — like `visit`, but with a stack of parents
+* [`unist-builder`](https://github.com/syntax-tree/unist-builder)
+  — create unist trees
 
 ## Contribute
 
@@ -314,64 +314,64 @@ abide by its terms.
 
 <!-- Definitions -->
 
-[build-badge]: https://github.com/syntax-tree/unist-util-select/workflows/main/badge.svg
-
-[build]: https://github.com/syntax-tree/unist-util-select/actions
-
-[coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/unist-util-select.svg
-
-[coverage]: https://codecov.io/github/syntax-tree/unist-util-select
-
-[downloads-badge]: https://img.shields.io/npm/dm/unist-util-select.svg
-
-[downloads]: https://www.npmjs.com/package/unist-util-select
-
-[size-badge]: https://img.shields.io/badge/dynamic/json?label=minzipped%20size&query=$.size.compressedSize&url=https://deno.bundlejs.com/?q=unist-util-select
-
-[size]: https://bundlejs.com/?q=unist-util-select
-
-[sponsors-badge]: https://opencollective.com/unified/sponsors/badge.svg
-
-[backers-badge]: https://opencollective.com/unified/backers/badge.svg
-
-[collective]: https://opencollective.com/unified
-
-[chat-badge]: https://img.shields.io/badge/chat-discussions-success.svg
-
-[chat]: https://github.com/syntax-tree/unist/discussions
-
-[npm]: https://docs.npmjs.com/cli/install
-
-[esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
-
-[esmsh]: https://esm.sh
-
-[typescript]: https://www.typescriptlang.org
-
-[license]: license
-
-[health]: https://github.com/syntax-tree/.github
-
-[contributing]: https://github.com/syntax-tree/.github/blob/main/contributing.md
-
-[help]: https://github.com/syntax-tree/.github/blob/main/support.md
-
-[coc]: https://github.com/syntax-tree/.github/blob/main/code-of-conduct.md
-
-[unist]: https://github.com/syntax-tree/unist
-
-[node]: https://github.com/syntax-tree/unist#node
-
-[preorder]: https://github.com/syntax-tree/unist#preorder
-
-[unist-util-visit]: https://github.com/syntax-tree/unist-util-visit
-
-[hast]: https://github.com/syntax-tree/hast
-
-[hast-util-select]: https://github.com/syntax-tree/hast-util-select
-
 [api-matches]: #matchesselector-node
 
 [api-select]: #selectselector-tree
 
 [api-select-all]: #selectallselector-tree
+
+[backers-badge]: https://opencollective.com/unified/backers/badge.svg
+
+[build]: https://github.com/syntax-tree/unist-util-select/actions
+
+[build-badge]: https://github.com/syntax-tree/unist-util-select/workflows/main/badge.svg
+
+[chat]: https://github.com/syntax-tree/unist/discussions
+
+[chat-badge]: https://img.shields.io/badge/chat-discussions-success.svg
+
+[coc]: https://github.com/syntax-tree/.github/blob/main/code-of-conduct.md
+
+[collective]: https://opencollective.com/unified
+
+[contributing]: https://github.com/syntax-tree/.github/blob/main/contributing.md
+
+[coverage]: https://codecov.io/github/syntax-tree/unist-util-select
+
+[coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/unist-util-select.svg
+
+[downloads]: https://www.npmjs.com/package/unist-util-select
+
+[downloads-badge]: https://img.shields.io/npm/dm/unist-util-select.svg
+
+[esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
+
+[esmsh]: https://esm.sh
+
+[hast]: https://github.com/syntax-tree/hast
+
+[hast-util-select]: https://github.com/syntax-tree/hast-util-select
+
+[health]: https://github.com/syntax-tree/.github
+
+[help]: https://github.com/syntax-tree/.github/blob/main/support.md
+
+[license]: license
+
+[node]: https://github.com/syntax-tree/unist#node
+
+[npm]: https://docs.npmjs.com/cli/install
+
+[preorder]: https://github.com/syntax-tree/unist#preorder
+
+[size]: https://bundlejs.com/?q=unist-util-select
+
+[size-badge]: https://img.shields.io/badge/dynamic/json?label=minzipped%20size&query=$.size.compressedSize&url=https://deno.bundlejs.com/?q=unist-util-select
+
+[sponsors-badge]: https://opencollective.com/unified/sponsors/badge.svg
+
+[typescript]: https://www.typescriptlang.org
+
+[unist]: https://github.com/syntax-tree/unist
+
+[unist-util-visit]: https://github.com/syntax-tree/unist-util-visit
